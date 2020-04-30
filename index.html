@@ -15,23 +15,26 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <!-- <div class="nav"> -->
-    <div class="nav-bar">
-      <span class="navbar-brand">
-          <h1>Social Media Dashboard</h1>
-          <p>Total Followers: 23,004</p>
-      </span>
-
-      Dark Mode
+  <div class="navbar">
+    <span class="navbar-brand">
+      <h2 class="brand">Social Media Dashboard</h2>
+      <p>Total Followers: 23,004</p>
+    </span>
+    <form class="form-inline" action="index.html" method="post">
+      <!-- <span >Dark Mode</span> -->
+      <span class="titleBtn">Dark Mode</span>
       <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
-    </div>
-    <!-- </div> -->
+  </div>
+  </form>
+
 
   <header>
 
@@ -89,8 +92,6 @@
               1099 Today
 
             </div>
-
-
           </div>
         </div>
         <div class="col">
@@ -105,146 +106,209 @@
               Subscribers
             </div>
             <div class="card-footer">
-
               144 Today
-
             </div>
 
           </div>
         </div>
       </div>
     </div>
-    </div>
-
-    </div>
   </header>
-  <section>
-    <h2>Overview - Today</h2>
-    <div class="">
-      <div class="">
-        <div class="">
-          <ul>
-            <li>Page Views</li>
-            <li>87</li>
-          </ul>
-        </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-facebook.svg" alt=""></li>
-            <li><img src="images\icon-up.svg" alt="">3%</li>
-          </ul>
-        </div>
 
 
+  <section class="overview">
+    <div class="navbar">
+      <span class="navbar-brand">
+        <h2>Overview - Today</h2>
       </div>
-      <div class="">
-        <div class="">
-          <ul>
-            <li>Likes</li>
-            <li>52</li>
-          </ul>
-        </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-facebook.svg" alt=""></li>
-            <li><img src="images\icon-down.svg" alt="">2%</li>
-          </ul>
-        </div>
+    </div>
+    <!--  -->
 
+    <div class="row ">
+      <div class="col firstCol">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                Page Views
+              </div>
+              <div class="col right">
+                <img src="images\icon-facebook.svg" alt="">
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="col left">
+              <h2>87</h2>
+              </div>
+              <div class="col right">
+              <span class="green-num">  <img src="images\icon-up.svg" alt="">3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="">
-        <div class="">
-          <ul>
-            <li>Likes</li>
-            <li>5462</li>
-          </ul>
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                Likes
+              </div>
+              <div class="col right">
+                <img src="images\icon-facebook.svg" alt="">
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="co leftl">
+                <h2>52</h2>
+              </div>
+              <div class="col right">
+                <span class="red-num"><img src="images\icon-down.svg" alt="">2%</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-instagram.svg" alt=""></li>
-            <li><img src="images\icon-up.svg" alt="">2257%</li>
-          </ul>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                Likes
+              </div>
+              <div class="col right">
+                <img src="images\icon-instagram.svg" alt="">
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="col left">
+                <h2>5462</h2>
+              </div>
+              <div class="col right">
+                <span class="green-num"><img src="images\icon-up.svg" alt="">553%</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="col lastCol">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                Profile Views
+              </div>
+              <div class="col right">
+                <img src="images\icon-instagram.svg" alt="">
 
-      </div>
-      <div class="">
-        <div class="">
-          <ul>
-            <li> Profile Views</li>
-            <li>52k</li>
-          </ul>
-        </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-instagram.svg" alt=""></li>
-            <li><img src="images\icon-up.svg" alt="">1375%</li>
-          </ul>
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="col left">
+                <h2>52k</h2>
+              </div>
+              <div class="col right">
+              <span class="green-num">  <img src="images\icon-up.svg" alt="">1375%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="">
-      <div class="">
-        <div class="">
-          <ul>
-            <li>Retweets</li>
-            <li>117</li>
-          </ul>
+    <div class="row set-row">
+      <div class="col firstCol">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                  Retweets
+              </div>
+              <div class="col right">
+                <img src="images\icon-twitter.svg" alt="">
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="col left">
+                <h2>117</h2>
+              </div>
+              <div class="col right">
+                <span class="green-num"><img src="images\icon-up.svg" alt="">303%</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-twitter.svg" alt=""></li>
-            <li><img src="images\icon-up.svg" alt="">303%</li>
-          </ul>
-        </div>
-
       </div>
-      <div class="">
-        <div class="">
-          <ul>
-            <li> Likes</li>
-            <li>507</li>
-          </ul>
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                Likes
+              </div>
+              <div class="col right">
+                <img src="images\icon-twitter.svg" alt="">
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="co leftl">
+              <h2>507</h2>
+              </div>
+              <div class="col right">
+              <span class="green-num">  <img src="images\icon-up.svg" alt="">553%</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-twitter.svg" alt=""></li>
-            <li><img src="images\icon-up.svg" alt="">553%</li>
-          </ul>
-        </div>
-
       </div>
-
-      <div class="">
-        <div class="">
-          <ul>
-            <li>Likes</li>
-            <li>107</li>
-          </ul>
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                Likes
+              </div>
+              <div class="col right">
+                <img src="images\icon-youtube.svg" alt="">
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="col left">
+                <h2>107</h2>
+              </div>
+              <div class="col right">
+                 <span class="red-num"><img src="images\icon-down.svg" alt="">19%</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-youtube.svg" alt=""></li>
-            <li><img src="images\icon-down.svg" alt=""> 19%</li>
-          </ul>
-        </div>
-
       </div>
-      <div class="">
-        <div class="">
-          <ul>
-            <li>Total Views</li>
-            <li> 1407</li>
-          </ul>
+      <div class="col lastCol">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col left">
+                  Total Views
+              </div>
+              <div class="col right">
+                <img src="images\icon-youtube.svg" alt="">
 
-        </div>
-        <div class="">
-          <ul>
-            <li><img src="images\icon-youtube.svg" alt=""></li>
-            <li><img src="images\icon-down.svg" alt="">12%</li>
-          </ul>
+              </div>
+            </div>
+            <div class="row footer">
+              <div class="col left">
+                <h2>1407</h2>
+              </div>
+              <div class="col right">
+                <span class="red-num"> <img src="images\icon-down.svg" alt="">12%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+
   </section>
   <footer>
     <div class="attribution">
@@ -254,7 +318,10 @@
   </footer>
 
 
-
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
