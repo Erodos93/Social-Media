@@ -9,7 +9,10 @@ section {
   padding-top: 140px;
   background-color: hsl(230, 17%, 14%);
 }
-
+h1{
+  margin-bottom: 0rem;
+  font-size: 4rem;
+}
 .navbar{
   color: hsl(0, 0%, 100%);
   font-size: 14px;
@@ -47,7 +50,7 @@ form {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsl(230, 22%, 74%);
+  background-image: linear-gradient(hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
   -webkit*transition: .4s;
   transition: .4s;
 }
@@ -59,13 +62,13 @@ form {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: hsl(230, 17%, 14%);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-input:checked+.slider {
-  background-image:  linear-gradient(hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+input:checked +.slider {
+background-image: linear-gradient(hsl(230, 22%, 74%) , hsl(230, 22%, 74%));
 }
 
 input:focus+.slider {
@@ -73,6 +76,8 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
+  background-color: hsl(0, 0%, 100%);
+
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -89,10 +94,14 @@ input:checked+.slider:before {
 .card {
   background-color: hsl(228, 28%, 20%);
   color: hsl(0, 0%, 100%);
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
 }
-
-.card-header {
+.font{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  letter-spacing:6px;
+}
+.card-body {
   background-color: hsl(228, 28%, 20%);
   border-bottom: none;
   padding-top: 20px;
@@ -108,18 +117,18 @@ input:checked+.slider:before {
   max-width: 18rem;
 }
 
-.twitterCard {
+#twitterCard {
   border-top: 5px solid hsl(203, 89%, 53%);
   max-width: 18rem;
 }
 
-.instagramCard {
+#instagramCard {
   padding: 2px;
   background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   max-width: 18rem;
 }
 
-.youtubeCard {
+#youtubeCard {
   border-top: 5px solid hsl(348, 97%, 39%);
   max-width: 18rem;
 }
